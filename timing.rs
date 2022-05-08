@@ -1,7 +1,8 @@
 fn main() {
     let now = std::time::Instant::now();
 
-    for i in 1..10000000 {
+    for i in 1..=10000000 {
+        if i % 1000000 == 0 { println!("{}", i); }
         work(i);
     }
 
