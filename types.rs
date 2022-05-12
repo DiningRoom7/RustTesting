@@ -37,5 +37,8 @@ fn main() {
     let _ = tup.0;       //Or like this
 
     //ARRAYS:
-    
+    let _: [u8; 4] = [1, 2, 3, 4]; //all elements must have same type
+    //      ^^^^^ <--- [type; size]
+    let arr: [i32, 5] = [3; 5]; //Results in [3, 3, 3, 3, 3] with i32 types
+    let _ = arr[3]; //Get values with bracket operators
 }
