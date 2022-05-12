@@ -26,4 +26,16 @@ fn main() {
 
     //CHARACTERS:
     let _: char = 'B'; //Four byte unicode character. Must use single quotes
+
+    //  COMPOUND TYPES //
+    //Two main compound types:
+    //  tuples, arrays
+
+    //TUPLES:
+    let tup: (u64, f32, char) = (800, 2.2, 'V'); //Tuples can contain many types. Must have fixed length
+    let (_, _, _) = tup; //Extract the variables like this
+    let _ = tup.0;       //Or like this
+
+    //ARRAYS:
+    
 }
