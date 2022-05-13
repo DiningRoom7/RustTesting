@@ -30,4 +30,10 @@ fn main() {
 
     //As many immutable references as you want can be created
     //because this has no datarace potential.
+
+    //Non lexical lifetimes allow things like this though:
+    //  let s1_ref = &s1;
+    //  println!("{s1_ref}");
+    //  let s1_mutref = &mut s1;
+    //s1_ref if never used again after the println so its scope actually ends there
 }
