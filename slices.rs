@@ -4,12 +4,12 @@
 
 fn main() {
     let s1 = String::from("Get words in this string.");
+    
     let first = get_first_word(&s1);
     println!("{first}");
 
     let second = get_second_word(&s1);
     println!("{second}");
-
 }
 
 //takes a reference string slice and returns a reference string slice
