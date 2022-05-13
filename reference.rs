@@ -1,6 +1,9 @@
+//THIS CONCEPT IS CALLED BORRROWING
+
 fn main() {
     let s1 = String::from("I am string.");
 
+    //ownership is not transfered to foo
     foo(&s1);
     //  ^ <-- & must be here for reference to s1
 
