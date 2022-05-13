@@ -17,7 +17,8 @@ fn main() {
     bar(n1);
     println!("{n1} from main");
     //This is okay because ints, floats, bools, and chars
-    //implement the copy trait
+    //implement the copy trait.
+    //Also tuples that only contain items that implement the copy trait
 }
 
 fn foo(s: String) {
