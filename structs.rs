@@ -1,10 +1,10 @@
 fn print_message(m: &Message) {
     println!("{:=<50}", "=");
-    println!("From: {}\nTo: {}\nMessage:\n\t{:30}\n\nMessage has {} been sent.",
+    println!("From: {}\nTo: {}\nMessage:\n\t{:30}\n\nMessage has {}been sent.",
                                     m.from,
                                     m.to,
                                     m.content, 
-                                    if m.sent {""} else {"not"});
+                                    if m.sent {""} else {"not "});
     println!("{:=<50}", "=");
 }
 
