@@ -37,10 +37,10 @@ impl Message {
     fn print(m: &Message) {
         println!("{:=<50}", "=");
         println!("From: {}\nTo: {}\nMessage:\n\t{:30}\n\nMessage has {}been sent.",
-                                        m.from,
-                                        m.to,
-                                        m.content, 
-                                        if m.sent {""} else {"not "});
+                m.from,
+                m.to,
+                m.content, 
+                if m.sent {""} else {"not "});
         println!("{:=<50}", "=");
     }
 }
