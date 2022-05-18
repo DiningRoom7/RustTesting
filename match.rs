@@ -18,6 +18,7 @@ fn match_str(str: &str) {
         "hi" => println!("Not cool"),
         "6" => println!("Even not cooler"),
         _ => println!("Nicer!")
+    //  ^ <-- the "other" keyword can be used here when we want to use the value
     }
     println!();
 }
