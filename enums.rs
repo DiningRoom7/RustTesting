@@ -20,12 +20,17 @@ enum IpAddrNew {
 //And again we can make a function that takes the enum type
 fn foo(ip: IpAddrNew) {
     //match can be used like before
-    println!("{}", match ip {
-        IpAddrNew::V4(value) => "IPV4 Address: ".to_owned() + &value,
-        IpAddrNew::V6(value) => "IPV6 Address: ".to_owned() + &value,
-    })
+//    println!("{}", match ip {
+//        IpAddrNew::V4(value) => "IPV4 Address: ".to_owned() + &value,
+//        IpAddrNew::V6(value) => "IPV6 Address: ".to_owned() + &value,
+//    })
 
     //Or "if let" can be used
+    if let IpAddrNew::V4(v4_addr) = ip {
+        println!("Cool V4 Address: {v4_addr}");
+    }else if let IpAddrNew::V6(v6_addr) = ip {
+        println!("Not Cool V6 Address: {v6_addr}");
+    }
 }
 
 fn main() {
