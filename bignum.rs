@@ -1,6 +1,6 @@
 fn main(){
     println!("Biggest u128: {}", std::u128::MAX);
-    println!("Biggest f32:  {:+e}", std::f64::MAX);
+    println!("Biggest f64:  {:+e}", std::f64::MAX);
     let fact52: f64 = factorial(52);
     println!("52 Factorial: {}", fact52);
 }
