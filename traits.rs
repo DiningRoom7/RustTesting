@@ -1,6 +1,8 @@
 //Defining a trait Summary with one method summarize
 trait Summary {
     fn summarize(&self) -> &str;
+    //Structs that implement traits must implement all the methods in a trait
+    //If another method was defined here I must also implement it in the impl Summary for Article
 }
 
 //Some traits such as Debug, Ord, and Clone can be automatically implemented using
